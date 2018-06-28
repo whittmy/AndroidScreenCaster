@@ -1,6 +1,8 @@
 # AndroidScreenCaster
 A live android screen caster which encoding media by h264,webm via TCP and UDP with low latency， record android screend（client） to ffmpeg（server）!!!
-  test result: Serious delay ！！！
+
+  test result: Serious delay ！！！ why??
+  
 
 # MOTIVATION
 I'm currently in charge of test automation team. We try to make possible functional testing for mobile games. While we're working on it, we needed to mirror live android screen to web browser. The first approach was MJPEG. We captured entire screen and sent it over network in every very short period. Surely, it was ineffiecient, slow and huge. The first approach was helpful anyway to prove our concept of system, though.
