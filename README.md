@@ -1,5 +1,5 @@
 # AndroidScreenCaster
-A live android screen caster which encoding media by h264,webm via TCP and UDP with low latency
+A live android screen caster which encoding media by h264,webm via TCP and UDP with low latency， record android screend（client） to ffmpeg（server）!!!
 
 # MOTIVATION
 I'm currently in charge of test automation team. We try to make possible functional testing for mobile games. While we're working on it, we needed to mirror live android screen to web browser. The first approach was MJPEG. We captured entire screen and sent it over network in every very short period. Surely, it was ineffiecient, slow and huge. The first approach was helpful anyway to prove our concept of system, though.
@@ -19,10 +19,10 @@ The second approach was encoding our media data by using well known codecs such 
 ![Screenshot](screenshot.jpg "Screenshot")
 
 # QUICK START
-## SERVER SIDE
-- ```ffplay -framerate 60 -i tcp://<your server ip here>:49152?listen```
+## step1 SERVER SIDE
+- ```ffplay -framerate 60 -i tcp://<your server ip here(pc'ip)>:49152?listen```
 
-## CLIENT SIDE(THIS APP)
+## step2 CLIENT SIDE(THIS APP)
 1. Put your remote host address(eg.IP)
 2. Choose format as H.264
 3. Tap Start
